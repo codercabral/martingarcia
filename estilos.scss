@@ -1,0 +1,246 @@
+
+//fuentes
+
+
+
+// paleta de colores
+$color0: #000;
+$color1: #fff;
+$color2: gold;
+$color3: #FFC600;
+$color4: #ffd700;
+$color5: #030346;
+
+//
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    background-color: $color0;
+    height: 80px;
+    width: 100%;
+    z-index: 20;
+
+    ul{
+        background-color: #000 !important;
+    }
+
+    .logo{
+        height: 200px;
+        width: 250px;
+        border-radius: 50%;
+        background-color: $color0;
+        background-image: url(img/logo.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .nav-link{
+        color: #FFC600 !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .nav-link::after{
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0%;
+        background: transparent;
+        transition: width .5s ease, background .5s ease;
+    }
+
+    .nav-link:hover:after{
+        width: 100%;
+        background: linear-gradient(70deg, $color1, $color3 , $color5, $color0);
+    }
+
+    .navbar-toggler{
+        border: 0 !important;
+    }
+    .navbar-toggler:focus{
+        border: 0 !important;
+    }
+    .fa-bars{
+        color: $color3 !important;
+    }
+
+    // #collapsibleNavbar{
+    //     margin-top: 20px !important;
+    //     border: 3px solid $color3 !important;
+    // }
+    
+}
+
+.fondo1{
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(165deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(img/architecture-2256489_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 5px $color0;
+    display: grid;
+    place-items: center;
+
+    .call{
+        height: 200px;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        h1{
+            color: $color3;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        a{
+            text-decoration: none;
+            color: $color1;
+            background-color: $color0;
+            padding: 10px 20px;
+            border-radius: 7px;
+            border: 1px solid $color3;
+        }
+        
+    }
+
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+
+}
+
+h3::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+h3:hover::after{
+    width: 100%;
+    background: $color3;
+}
+
+main{
+    min-height: 350px;
+    width: 100%;
+    padding: 20px;
+
+
+    .feature{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+
+
+        .feat{
+            width: 30%;
+            height: 300px;
+            background-color: #FFC600;
+            text-align: center;
+            border: 2px solid #000;
+
+            
+            .feat-icon{
+                color: $color1;
+                background-image: linear-gradient(gold, #333);
+
+                i{
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+                
+            }
+
+            .feat-title{
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .feat-desc{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+    }
+
+
+
+    img{
+        border-radius: 10%;
+        object-fit: cover;
+        height: 350px;
+        width: auto;
+    }
+    .redes a{
+        display: inline-block;
+        background-color: $color0;
+        color: $color3;
+        font-size: 28px;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    .main-boton{
+        background-color: $color0;
+        text-decoration: none;
+        color: $color3;
+        padding: 10px 20px;
+        border-radius: 7px;
+    }
+}
+
+
+h2{
+    text-align: center;
+    background-color: $color0;
+    color: $color3;
+    padding: 20px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+    .logo{
+        display: none;
+    }
+
+    #collapsibleNavbar{
+        margin-top: 20px !important;
+        border: 3px solid $color3 !important;
+    }
+
+    .nav-link:hover{
+        color: $color1 !important;
+        background-color: #333 !important;
+        text-decoration: none;
+    }
+
+    .nav-link:hover:after{
+        width: 0;
+    }
+}
