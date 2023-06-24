@@ -226,6 +226,101 @@ h2{
     }
 }
 
+//slogan
+
+.slogan{
+    background-color: $color0;
+    color: $color1;
+    padding: 0% 20%;
+}
+
+.slogan h5{
+    color: $color3;
+}
+
+.slogan h3{
+    text-align: left;
+}
+
+// articulos vertical
+
+.articulos-vertical{
+    padding: 20px;
+    background-color: $color0;
+    color: $color1;
+
+    .art-vert-img{
+        height: 350px;
+        background-image: url(img/architecture-2256489_1920.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .article-vertical{
+        padding: 15px;
+    }
+
+    .article-vertical h4{
+        color: $color3;
+    }
+
+    .article-vertical a{
+        color: $color3;
+        // text-decoration: none;
+    }
+}
+
+// galeria1
+
+.galeria1{
+    background-color: $color0;
+    color: $color1;
+    padding: 10%;
+
+    h5{
+        text-align: center;
+        color: $color3;
+    }
+
+    .galery-img{
+        height: 250px;
+        width: 200px;
+        background-image: url(img/architecture-2256489_1920.jpg);
+        background-size: cover;
+        background-position: center;
+        // margin: 15px;
+    }
+}
+
+// footer
+
+footer{
+    background-color: $color0;
+    color: $color1;
+
+    .logo{
+        // background-color: aqua;
+        display: flex;
+        justify-content: center;
+    }
+    .redes{
+        // background-color: aqua;
+        display: flex;
+        justify-content: flex-end;
+
+        
+        a{
+            color: $color3;
+            text-decoration: none;
+            font-size: 30px;
+            letter-spacing: 20px;
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
 
 
 

@@ -171,6 +171,80 @@ h2 {
   color: #FFC600;
 }
 
+.slogan {
+  background-color: #000;
+  color: #fff;
+  padding: 0% 20%;
+}
+
+.slogan h5 {
+  color: #FFC600;
+}
+
+.slogan h3 {
+  text-align: left;
+}
+
+.articulos-vertical {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+.articulos-vertical .art-vert-img {
+  height: 350px;
+  background-image: url(img/architecture-2256489_1920.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.articulos-vertical .article-vertical {
+  padding: 15px;
+}
+.articulos-vertical .article-vertical h4 {
+  color: #FFC600;
+}
+.articulos-vertical .article-vertical a {
+  color: #FFC600;
+}
+
+.galeria1 {
+  background-color: #000;
+  color: #fff;
+  padding: 10%;
+}
+.galeria1 h5 {
+  text-align: center;
+  color: #FFC600;
+}
+.galeria1 .galery-img {
+  height: 250px;
+  width: 200px;
+  background-image: url(img/architecture-2256489_1920.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+}
+footer .redes {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .redes a {
+  color: #FFC600;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 20px;
+}
+footer p {
+  text-align: center;
+}
+
 @media only screen and (max-width: 576px) {
   .logo {
     display: none;
