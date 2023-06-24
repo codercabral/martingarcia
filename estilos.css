@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #000;
+}
+
 .navbar {
   background-color: #000;
   height: 80px;
@@ -149,6 +153,14 @@ h2 {
   margin-bottom: 0;
 }
 
+.financiamiento {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 0 10%;
+  margin-bottom: 0;
+}
+
 .feature {
   padding: 5%;
   background-color: #000;
@@ -162,8 +174,8 @@ h2 {
 .feature .row article {
   padding: 20px;
   border: 3px solid #333;
-  min-width: 350px;
-  height: 200px;
+  min-width: 400px;
+  height: 270px;
   margin: 10px;
 }
 .feature .row article a {
@@ -192,12 +204,18 @@ h2 {
 }
 .articulos-vertical .art-vert-img {
   height: 350px;
-  background-image: url(img/architecture-2256489_1920.jpg);
+  background-image: url(img/pexels-yan-krukau-7691704.jpg);
   background-size: cover;
   background-position: center;
 }
 .articulos-vertical .article-vertical {
   padding: 15px;
+}
+.articulos-vertical .article-vertical:nth-child(2) .art-vert-img {
+  background-image: url(img/pexels-yan-krukau-7698799.jpg);
+}
+.articulos-vertical .article-vertical:nth-child(3) .art-vert-img {
+  background-image: url(img/pexels-yan-krukau-7698807.jpg);
 }
 .articulos-vertical .article-vertical h4 {
   color: #FFC600;
@@ -221,6 +239,15 @@ h2 {
   background-image: url(img/architecture-2256489_1920.jpg);
   background-size: cover;
   background-position: center;
+}
+.galeria1 .galery-img1 {
+  background-image: url(img/pexels-yan-krukau-7691704.jpg);
+}
+.galeria1 .galery-img3 {
+  background-image: url(img/pexels-yan-krukau-7698799.jpg);
+}
+.galeria1 .galery-img5 {
+  background-image: url(img/pexels-yan-krukau-7698807.jpg);
 }
 
 footer {
