@@ -137,11 +137,56 @@ h3:hover::after{
     background: $color3;
 }
 
+// main inicia
+
 main{
     min-height: 350px;
     width: 100%;
     padding: 20px;
+    background-color: $color0;
+    color: $color1;
+
+    .desc{
+        
+        padding: 50px;
+
+        .desc-img{
+            height: 500px;
+            width: 40%;
+            background-color: #FFC600;
+            background-image: url(img/architecture-2256489_1920.jpg);
+            background-size: cover;
+            background-position: center;
+            // border: 2px solid $color1;
+        }
+        .desc-art{
+            // background-color: #030346;
+            padding-left: 50px;
+            width: 60%;
+            
+            h3{
+                text-align: left;
+            }
+
+            p{
+                margin-bottom: 30px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $color3;
+                border: 3px solid $color3;
+                padding: 10px 40px;
+            }
+        }
+    }
+
+    .desc2 .desc-art{
+        padding-right: 50px;
+    } 
 }
+
+
 
 
 h2{
@@ -149,8 +194,37 @@ h2{
     background-color: $color0;
     color: $color3;
     padding: 20px;
+    margin-bottom: 0;
 }
 
+
+// feature
+
+.feature{
+    padding: 5%;
+    background-color: $color0;
+    color: $color1;
+
+    .row{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        article{
+            padding: 20px;
+            border: 3px solid #333;
+            min-width: 350px;
+            height: 200px;
+            margin: 10px;
+
+
+            a{
+                text-decoration: none;
+                color: $color3;
+            }
+        }
+    }
+}
 
 
 
@@ -175,4 +249,6 @@ h2{
     .nav-link:hover:after{
         width: 0;
     }
+
+
 }

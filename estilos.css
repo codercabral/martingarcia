@@ -107,61 +107,38 @@ main {
   min-height: 350px;
   width: 100%;
   padding: 20px;
-}
-main .feature {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  padding: 20px;
-}
-main .feature .feat {
-  width: 30%;
-  height: 300px;
-  background-color: #FFC600;
-  text-align: center;
-  border: 2px solid #000;
-}
-main .feature .feat .feat-icon {
+  background-color: #000;
   color: #fff;
-  background-image: linear-gradient(gold, #333);
 }
-main .feature .feat .feat-icon i {
-  font-size: 50px;
-  line-height: 70px;
+main .desc {
+  padding: 50px;
 }
-main .feature .feat .feat-title {
-  font-family: "Courier New", Courier, monospace;
+main .desc .desc-img {
+  height: 500px;
+  width: 40%;
+  background-color: #FFC600;
+  background-image: url(img/architecture-2256489_1920.jpg);
+  background-size: cover;
+  background-position: center;
 }
-main .feature .feat .feat-desc {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+main .desc .desc-art {
+  padding-left: 50px;
+  width: 60%;
 }
-main img {
-  border-radius: 10%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 350px;
-  width: auto;
+main .desc .desc-art h3 {
+  text-align: left;
 }
-main .redes a {
-  display: inline-block;
-  background-color: #000;
-  color: #FFC600;
-  font-size: 28px;
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  margin-bottom: 20px;
+main .desc .desc-art p {
+  margin-bottom: 30px;
 }
-main .main-boton {
-  background-color: #000;
+main .desc .desc-art a {
   text-decoration: none;
   color: #FFC600;
-  padding: 10px 20px;
-  border-radius: 7px;
+  border: 3px solid #FFC600;
+  padding: 10px 40px;
+}
+main .desc2 .desc-art {
+  padding-right: 50px;
 }
 
 h2 {
@@ -169,6 +146,29 @@ h2 {
   background-color: #000;
   color: #FFC600;
   padding: 20px;
+  margin-bottom: 0;
+}
+
+.feature {
+  padding: 5%;
+  background-color: #000;
+  color: #fff;
+}
+.feature .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.feature .row article {
+  padding: 20px;
+  border: 3px solid #333;
+  min-width: 350px;
+  height: 200px;
+  margin: 10px;
+}
+.feature .row article a {
+  text-decoration: none;
+  color: #FFC600;
 }
 
 @media only screen and (max-width: 576px) {
