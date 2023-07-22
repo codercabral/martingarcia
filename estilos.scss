@@ -1,5 +1,8 @@
 
 //fuentes
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&family=Rubik:wght@300;500&display=swap');
+
+
 
 @font-face {
     font-family: orpheus-pro;
@@ -7,28 +10,81 @@
 }
 
 $font1: orpheus-pro;
+$font2:'Rubik', sans-serif;
+$font3: 'poppins', sans-serif;
 
-// paleta de colores
-$color0: #000;
+// paleta de colores modo dark inicia
+$color0: #111;
 $color1: #fff;
 $color2: gold;
 $color3: #FFC600;
+$color3: #c89e08;
+$color3: #7e660c;
+// color de las brochure
+// $color3: #ba8e45;
+// $color3: #ce9f41;
+// fin de los colores de la brochure
 $color4: #ffd700;
 $color5: #030346;
 $color6: #434343;
+$color7: #242323;
+// paleta de colores modo dark fin
+// paleta de colores modo light inicia
 
-//
+$mode: false;
+
+
+@if $mode == true{
+    $color0: #eee;
+    $color1: #000;
+    $color2: gold;
+    $color3: #c89e08;
+    $color4: #ffd700;
+    $color5: #030346;
+    $color6: #434343;
+}
+
+
+// paleta de colores modo light fin
+
+// .form-check-input{
+//     $mode: false;
+// }
+
+.form-check-input:checked {
+    background-color: $color3;
+    border-color: $color0;
+}
+
+.form-check-input:focus {
+    background-color: $color5;
+    border-color: $color6;
+}
+
+.form-switch{
+    background-color: #0000004f !important;
+    display: none;
+}
+
+.dark-mode{
+    background-color: green;
+    border-color: crimson;
+}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $font1, fantasy;
+    // font-family: $font2;
+    font-family: $font3;
     
 }
 
 body{
     background-color: $color0;
+    overflow-x: hidden !important;
 }
 
 
@@ -60,7 +116,7 @@ body{
     }
 
     .nav-link{
-        color: #FFC600 !important;
+        color: $color3 !important;
         padding-left: 20px !important;
         padding-right: 20px !important;
         text-shadow: 0 0 4px #000;
@@ -98,6 +154,7 @@ body{
     
 }
 
+
 .fondo1{
     height: 600px;
     width: 100%;
@@ -106,7 +163,7 @@ body{
     background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% ), url(video/banner.gif);
     background-size: cover;
     background-position: center;
-    text-shadow: 0 0 5px $color0;
+    // text-shadow: 0 0 5px #000;
     display: grid;
     place-items: center;
     backdrop-filter: blur(5px);
@@ -155,14 +212,15 @@ body{
 
         .bttn-unite.bttn-primary:hover{
             transform: scale(1.15);
+            background-color: $color3;
         }
 
         .bttn-unite.bttn-primary::before {
-            background: $color5;
+            background: $color7;
         }
 
         .bttn-unite.bttn-primary:after {
-            background: lighten($color5, 10%);
+            background: lighten($color7, 10%);
         }
 
 
@@ -170,6 +228,43 @@ body{
 
 }
 
+// comercio exterior banner inicia
+
+.f-local{
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% ), url(img/analisis4.jpg);
+}
+
+// comercio exterior banner fin
+
+// comercio exterior banner inicia
+
+.f-comercio{
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% ), url(img/analisis2.jpg);
+}
+
+// comercio exterior banner fin
+
+
+// finanzas coorporativas banner inicia
+
+.f-corporativas{
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% ), url(img/analisis8.jpg);
+}
+
+// finanzas coorporativas banner fin
+
+// contacto banner inicia
+
+.f-contacto{
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% ), url(img/contact.jpg);
+}
+// contacto banner fin
+// etapas banner inicia
+
+.f-etapas{
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% ), url(img/3.jpg);
+}
+// etapas banner fin
 
 h3{
     text-align: center;
@@ -199,6 +294,13 @@ main{
     width: 100%;
     padding: 20px;
     background-color: $color0;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), url(img/patternpad.svg);
+    // background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), url(img/patternpad\ \(1\).svg);
+    // background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), url(img/patternpad\ \(2\).svg);
+    // background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), url(img/patternpad\ \(3\).svg);
+    // background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), url(img/patternpad\ \(4\).svg);
+    // background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), url(img/patternpad\ \(5\).svg);
+    background-position: center;
     color: $color1;
 
     .desc{
@@ -213,6 +315,12 @@ main{
             background-size: cover;
             background-position: center;
             // border: 2px solid $color1;
+            box-shadow: 10px 10px 0px $color3, 10px 10px 10px $color1;
+            transition: 0.9s;
+        }
+        .desc-img:hover{
+            box-shadow: none;
+            transform: translate(20px,20px);
         }
         .desc-art{
             // background-color: #030346;
@@ -287,7 +395,7 @@ h2{
     margin-bottom: 0;
 }
 
-.financiamiento{
+.financiamiento, .comercio{
     text-align: center;
     background-color: $color0;
     color: $color1;
@@ -295,8 +403,11 @@ h2{
     margin-bottom: 0;
 }
 
-// feature
+.comercio-parrafo{
+    font-size: 28px;
+}
 
+// feature index y comercio
 .feature{
     padding: 5%;
     background-color: $color0;
@@ -306,16 +417,24 @@ h2{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 5%;
 
         article{
             padding: 20px;
             border: 3px solid #333;
-            min-width: 400px;
-            height: 270px;
-            margin: 10px;
+            min-width: 270px;
+            // height: 270px;
+            margin-bottom: 30px;
             box-shadow: 0 0 5px 0px $color1, 0 0 5px 5px $color3;
             border-radius: 5px;
             // transition: all 0.1s;
+
+            img{
+                width: 100%;
+            }
+            .row{
+                width: 100% !important;
+            }
 
             &:hover{
                 background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(41, 41, 41, 0.8) 0%, rgba(188, 136, 4, 0.8) 100.2% );
@@ -339,6 +458,11 @@ h2{
         }
     }
 }
+
+.feature-comercio .row img{
+    width: 30% !important;
+}
+
 
 //slogan
 
@@ -366,7 +490,8 @@ h2{
 
     .art-vert-img{
         height: 350px;
-        background-image: url(img/pexels-yan-krukau-7691704.jpg);
+        // background-image: url(img/pexels-yan-krukau-7691704.jpg);
+        background-image: url(img/analisis02.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -382,11 +507,13 @@ h2{
     }
 
     .article-vertical:nth-child(2) .art-vert-img{
-        background-image: url(img/pexels-yan-krukau-7698799.jpg);
+        // background-image: url(img/pexels-yan-krukau-7698799.jpg);
+        background-image: url(img/gestion01.jpg);
     }
 
     .article-vertical:nth-child(3) .art-vert-img{
-        background-image: url(img/pexels-yan-krukau-7698807.jpg);
+        // background-image: url(img/pexels-yan-krukau-7698807.jpg);
+        background-image: url(img/ejecucion01.jpg);
     }
 
     .article-vertical h4{
@@ -418,16 +545,20 @@ h2{
     .galery-img{
         height: 250px;
         width: 200px;
-        background-image: url(img/architecture-2256489_1920.jpg);
+        // background-image: url(img/architecture-2256489_1920.jpg);
         background-size: cover;
         background-position: center;
         transition: all 0.8s;
-        // margin: 15px;
+        margin-bottom: 25px;
 
         &:hover{
             transform: translateX(10px) translateY(-10px);
             border-radius: 10px;
             filter: sepia(100%);
+            position: relative;
+            border: 5px solid $color3;
+            box-shadow: 5px 5px 5px #aaa;
+            z-index: 5;
         }
     }
 
@@ -435,11 +566,13 @@ h2{
     //     transform: skew(-5deg);
     // }
 
+    // galeria home inicio
+
     .galery-img1{
         background-image: url(img/pexels-yan-krukau-7691704.jpg);
     }
     .galery-img2{
-        background-image: url(img/acompañamiento.jpg);
+        background-image: url(img/5.jpg);
     }
     .galery-img3{
         background-image: url(img/pexels-yan-krukau-7698799.jpg);
@@ -451,10 +584,89 @@ h2{
         background-image: url(img/pexels-yan-krukau-7698807.jpg);
     }
     .galery-img6{
-        background-image: url(img/pexels-mikhail-nilov-8297475.jpg);
+        background-image: url(img/6.jpg);
         background-position: right;
     }
 }
+
+//galeria financiamiento inicio
+
+.galery2{
+    .galery-img1{
+        background-image: url(img/2.jpg);
+    }
+    .galery-img2{
+        background-image: url(img/3.jpg);
+    }
+    .galery-img3{
+        background-image: url(img/4.jpg);
+        background-position: right;
+    }
+    .galery-img4{
+        background-image: url(img/11.jpg);
+    }
+    .galery-img5{
+        background-image: url(img/analisis7.jpg);
+    }
+    .galery-img6{
+        background-image: url(img/analisisyestadisticas.jpg);
+        background-position: center;
+    }
+}
+
+
+//galeria comercio inicio
+
+.galery3{
+    .galery-img1{
+        background-image: url(img/12.jpg);
+    }
+    .galery-img2{
+        background-image: url(img/13.jpg);
+    }
+    .galery-img3{
+        background-image: url(img/14.jpg);
+        background-position: right;
+    }
+    .galery-img4{
+        background-image: url(img/comercio006.jpg);
+    }
+    .galery-img5{
+        background-image: url(img/comercio003.jpg);
+    }
+    .galery-img6{
+        background-image: url(img/comercio009.jpg);
+        background-position: center;
+    }
+}
+
+
+//galeria finanzas inicio
+
+.galery4{
+    .galery-img1{
+        background-image: url(img/analisis5.jpg);
+        background-position: center;
+    }
+    .galery-img2{
+        background-image: url(img/analisis6.jpg);
+    }
+    .galery-img3{
+        background-image: url(img/analisis8.jpg);
+        background-position: right;
+    }
+    .galery-img4{
+        background-image: url(img/analisis01.jpg);
+    }
+    .galery-img5{
+        background-image: url(img/blur-1853262_1280.jpg);
+    }
+    .galery-img6{
+        background-image: url(img/stock-g1878239a3_1280.jpg);
+        background-position: center;
+    }
+}
+
 
 // footer
 
@@ -498,17 +710,193 @@ footer{
 
 @keyframes bounce{
     0%{
-        transform: scale(1);
+        transform: scale(0.8);
     }
 
     100%{
-        transform: scale(1.2);
+        transform: scale(1);
     }
 }
 
+// finanzas corporativas
+
+.finan-img1{
+    background-image: url(img/analisis9.jpg) !important;
+}
+
+.finan-img2{
+    background-image: url(img/analisis3.jpg) !important;
+}
+
+.finan-img3{
+    background-image: url(img/consultoria.jpg) !important;
+}
 
 
+//feature financiamiento local
 
+.feature-finance article:nth-child(1) .art-vert-img{
+    background-image: url(img/financiamiento1.jpg);
+}
+.feature-finance article:nth-child(2) .art-vert-img{
+    background-image: url(img/financiamiento3.jpg) !important;
+}
+.feature-finance article:nth-child(3) .art-vert-img{
+    background-image: url(img/financiamiento4.jpg) !important;
+}
+.feature-finance article:nth-child(4) .art-vert-img{
+    background-image: url(img/financiamiento2.jpg);
+}
+// etapas inicia
+
+$ancho-anima: 200px;
+
+.etapas {
+    padding: 20px 20%;
+    width: 100%;
+
+    h4{
+        color: $color3;
+        text-align: center;
+        border: 4px solid $color3;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+
+    h5{
+        text-align: center;
+    }
+
+    .hr{
+        height: 10px;
+        width: $ancho-anima;
+        background-color: $color1;
+        border-radius: 10px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .hr1 i{
+        animation-delay: .2s;
+    }
+
+    .hr2 i{
+        animation-delay: .5s;
+    }
+
+    .hr3 i{
+        animation-delay: .7s;
+    }
+
+    .hr4 i{
+        animation-delay: .9s;
+    }
+
+    i{
+        width: auto;
+        color: $color3;
+        background-color: $color1;
+        border-radius: 50%;
+        font-size: 45px;
+        position: absolute;
+        top: -14px;
+        left: 0;
+        animation-name: meta;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: translateX($ancho-anima - 30px);
+    }
+}
+
+@keyframes meta{
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateX($ancho-anima - 30px);
+    }
+}
+
+// boton subir inicia
+
+.subir{
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background-color: $color1;
+    color: $color0;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid $color3;
+    box-shadow: 2px 2px 5px $color3;
+    text-shadow: 0 0 5px $color3;
+    text-decoration: none;
+
+}
+
+// boton subir fin
+// boton whatsapp inicia
+.whatsapp{
+    position: fixed;
+    right: 35px;
+    bottom: 100px;
+    color: $color3;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    // background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid $color3;
+    box-shadow: 0 0 5px $color3;
+    height: 60px;
+    width: 60px;
+    line-height: 55px;
+    padding: 5px 5px 10px 7px;
+    border-radius: 50%;
+    backdrop-filter: blur(15px);
+
+    &:hover{
+        color: $color1;
+        box-shadow: 0 0 5px $color3, 0 0 5px $color3, 0 0 5px 5px $color3;
+        text-shadow: 0 0 5px $color0;
+    }
+}
+// boton whatsapp fin
+// personalizacion del scrollbar inicia
+::-webkit-scrollbar, ::-webkit-scrollbar-track,::-webkit-scrollbar-corner{
+    background-color: #181818;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $color3;
+    border: 1px solid #000;
+    box-shadow: inset 0 0 5px #000;
+    border-radius: 10px;
+}
+
+// ::-webkit-scrollbar-corner{
+//     background-color: green;
+// }
+// ::-webkit-scrollbar-track-piece{
+//     background-color: maroon;
+// }
+
+// ::-webkit-scrollbar-button{
+//     background-color: coral;
+// }
+// personalizacion del scrollbar fin
+
+.img-fluid{
+    border: 3px solid $color3;
+    box-shadow: 0 0 5px 2px $color3 !important;
+    margin-bottom: 15px;
+}
+
+// media queries!! ↓↓↓
 
 @media only screen and (max-width:576px) {
     .logo{
@@ -518,6 +906,59 @@ footer{
     #collapsibleNavbar{
         margin-top: 20px !important;
         border: 3px solid $color3 !important;
+        background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% );
+    }
+
+    .nav-link:hover{
+        color: $color1 !important;
+        background-color: #333 !important;
+        text-decoration: none;
+    }
+
+    .nav-link:hover:after{
+        width: 0;
+    }
+
+    // main
+
+    .desc{
+        flex-wrap: wrap;
+        gap: 50px 0px;
+        padding: 0;
+
+        .desc-img, .desc-art{
+            width: 100% !important;
+            padding: 0 0 0 0 !important;
+        }
+
+        .desc-img{
+            order: -1;
+        }
+    }
+
+    .slogan{
+        padding: 0 5%;
+
+        h2{
+            // text-align: center;
+        }
+    }
+
+    // comercio 
+
+    .feature-comercio img{
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width:576px) and (max-width:991px) {
+
+    #collapsibleNavbar{
+        margin-top: 20px !important;
+        border: 3px solid $color3 !important;
+        background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,0.8) 0%, rgba(69, 69, 69, 0.8) 100.2% );
     }
 
     .nav-link:hover{
@@ -531,4 +972,30 @@ footer{
     }
 
 
+}
+
+@media only screen and (min-width:996px){
+    .etapas{
+        $ancho-anima: 600px;
+
+        .hr{
+            width: $ancho-anima;
+        }
+    
+        i{
+            transform: translateX($ancho-anima - 30px);
+            animation-duration: 3.5s;
+        }
+
+    }
+
+    @keyframes meta{
+        0%{
+            transform: translateY(0);
+        }
+    
+        100%{
+            transform: translateX(600px - 30px);
+        }
+    }
 }
