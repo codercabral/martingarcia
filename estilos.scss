@@ -430,6 +430,7 @@ h2{
             border: 3px solid #333;
             min-width: 270px;
             // height: 270px;
+            height: auto;
             margin-bottom: 30px;
             box-shadow: 0 0 5px 0px $color1, 0 0 5px 5px $color3;
             border-radius: 5px;
@@ -437,9 +438,14 @@ h2{
 
             img{
                 width: 100%;
+                height: auto;
             }
             .row{
                 width: 100% !important;
+
+                li, h5{
+                    line-height: 25px;
+                }
             }
 
             &:hover{
@@ -999,5 +1005,11 @@ $ancho-anima: 200px;
         100%{
             transform: translateX(600px - 30px);
         }
+    }
+}
+
+@media only screen and (min-width:950px) and (max-width:1880px){
+    .feature-comercio .row article .row{
+        gap: 0% !important;
     }
 }

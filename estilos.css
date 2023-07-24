@@ -285,15 +285,20 @@ h2 {
   padding: 20px;
   border: 3px solid #333;
   min-width: 270px;
+  height: auto;
   margin-bottom: 30px;
   box-shadow: 0 0 5px 0px #fff, 0 0 5px 5px #7e660c;
   border-radius: 5px;
 }
 .feature .row article img {
   width: 100%;
+  height: auto;
 }
 .feature .row article .row {
   width: 100% !important;
+}
+.feature .row article .row li, .feature .row article .row h5 {
+  line-height: 25px;
 }
 .feature .row article:hover {
   background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(41, 41, 41, 0.8) 0%, rgba(188, 136, 4, 0.8) 100.2%);
@@ -728,5 +733,10 @@ footer p {
     100% {
       transform: translateX(570px);
     }
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1880px) {
+  .feature-comercio .row article .row {
+    gap: 0% !important;
   }
 }/*# sourceMappingURL=estilos.css.map */
