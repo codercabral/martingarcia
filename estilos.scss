@@ -113,7 +113,13 @@ body{
         background-image: url(img/logo.png);
         background-size: cover;
         background-position: center;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
     }
+
 
     .nav-link{
         color: $color3 !important;
@@ -938,10 +944,6 @@ $ancho-anima: 200px;
 
     .slogan{
         padding: 0 5%;
-
-        h2{
-            // text-align: center;
-        }
     }
 
     // comercio 
