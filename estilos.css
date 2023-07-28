@@ -4,26 +4,6 @@
   font-family: orpheus-pro;
   src: url(fonts/OrpheusPro-Bold.ttf);
 }
-.form-check-input:checked {
-  background-color: #7e660c;
-  border-color: #111;
-}
-
-.form-check-input:focus {
-  background-color: #030346;
-  border-color: #434343;
-}
-
-.form-switch {
-  background-color: rgba(0, 0, 0, 0.3098039216) !important;
-  display: none;
-}
-
-.dark-mode {
-  background-color: green;
-  border-color: crimson;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +46,7 @@ body {
   color: #7e660c !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
-  text-shadow: 0 0 4px #000;
+  text-shadow: 0 0 4px #ffffff;
   text-transform: uppercase;
 }
 .navbar .nav-link::after {
@@ -94,7 +74,7 @@ body {
 .fondo1 {
   height: 600px;
   width: 100%;
-  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 0.8) 0%, rgba(69, 69, 69, 0.8) 100.2%), url(video/banner.gif);
+  background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(video/banner.gif);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -111,11 +91,18 @@ body {
   align-items: center;
   align-content: center;
 }
+.fondo1 .call img {
+  filter: drop-shadow(0 0 10px #fff);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 15px;
+}
 .fondo1 .call h1 {
   color: #7e660c;
   text-align: center;
   width: 100%;
   margin-bottom: 15px;
+  text-shadow: 0 0 2px #fff;
 }
 .fondo1 .call a {
   text-decoration: none;
@@ -140,23 +127,23 @@ body {
 }
 
 .f-local {
-  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 0.8) 0%, rgba(69, 69, 69, 0.8) 100.2%), url(img/analisis4.jpg);
+  background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/analisis4.jpg);
 }
 
 .f-comercio {
-  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 0.8) 0%, rgba(69, 69, 69, 0.8) 100.2%), url(img/analisis2.jpg);
+  background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/analisis2.jpg);
 }
 
 .f-corporativas {
-  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 0.8) 0%, rgba(69, 69, 69, 0.8) 100.2%), url(img/analisis8.jpg);
+  background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/analisis8.jpg);
 }
 
 .f-contacto {
-  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 0.8) 0%, rgba(69, 69, 69, 0.8) 100.2%), url(img/contact.jpg);
+  background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/contact.jpg);
 }
 
 .f-etapas {
-  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 0.8) 0%, rgba(69, 69, 69, 0.8) 100.2%), url(img/3.jpg);
+  background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/1.jpg);
 }
 
 h3 {
@@ -194,8 +181,7 @@ main .desc {
 main .desc .desc-img {
   height: 500px;
   width: 40%;
-  background-color: #FFC600;
-  background-image: url(img/architecture-2256489_1920.jpg);
+  background-image: url(img/pyme\ finance.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: 10px 10px 0px #7e660c, 10px 10px 10px #fff;
@@ -247,7 +233,7 @@ main .desc2 .desc-art {
   padding-right: 50px;
 }
 main .desc2 .desc-img {
-  background-image: url(img/acompañamiento.jpg);
+  background-image: url(img/homefinal.jpg);
 }
 
 h2 {
@@ -266,8 +252,21 @@ h2 {
   margin-bottom: 0;
 }
 
+.f-l {
+  text-align: justify;
+  font-size: 28px;
+}
+
 .comercio-parrafo {
   font-size: 28px;
+  text-align: justify;
+}
+
+.feature-financiamiento article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
 }
 
 .feature {
@@ -404,12 +403,14 @@ h2 {
 }
 .galeria1 .galery-img2 {
   background-image: url(img/5.jpg);
+  background-position: left;
 }
 .galeria1 .galery-img3 {
   background-image: url(img/pexels-yan-krukau-7698799.jpg);
 }
 .galeria1 .galery-img4 {
-  background-image: url(img/pexels-andrea-piacquadio-3760514.jpg);
+  background-image: url(img/acompañamiento\ \(2\).jpg);
+  background-position: bottom;
 }
 .galeria1 .galery-img5 {
   background-image: url(img/pexels-yan-krukau-7698807.jpg);
@@ -523,31 +524,31 @@ footer p {
   }
 }
 .finan-img1 {
-  background-image: url(img/analisis9.jpg) !important;
+  background-image: url(img/inversiones\ inteligentes.jpg) !important;
 }
 
 .finan-img2 {
-  background-image: url(img/analisis3.jpg) !important;
+  background-image: url(img/estrategias\ de\ cobertura.jpg) !important;
 }
 
 .finan-img3 {
-  background-image: url(img/consultoria.jpg) !important;
+  background-image: url(img/consultoria1.jpg) !important;
 }
 
 .feature-finance article:nth-child(1) .art-vert-img {
-  background-image: url(img/financiamiento1.jpg);
+  background-image: url(img/financiamiento9.jpg);
 }
 
 .feature-finance article:nth-child(2) .art-vert-img {
-  background-image: url(img/financiamiento3.jpg) !important;
+  background-image: url(img/fondos\ comun\ de\ inversion.jpg) !important;
 }
 
 .feature-finance article:nth-child(3) .art-vert-img {
-  background-image: url(img/financiamiento4.jpg) !important;
+  background-image: url(img/fondos-internacionales.jpg) !important;
 }
 
 .feature-finance article:nth-child(4) .art-vert-img {
-  background-image: url(img/financiamiento2.jpg);
+  background-image: url(img/fondos\ comunes\ de\ inversion.jpg);
 }
 
 .etapas {
@@ -560,6 +561,7 @@ footer p {
   border: 4px solid #7e660c;
   padding: 5px;
   margin-bottom: 30px;
+  box-shadow: 0 0 5px rgb(154, 153, 153), 0 0 5px 0px rgb(154, 153, 153);
 }
 .etapas h5 {
   text-align: center;
