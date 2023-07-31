@@ -22,14 +22,68 @@ $color7: #242323;
 $color8: #FFC600;
 $color9: #c89e08;
 
+// imagenes
+
+$img1: url(img/pyme-finance.jpg);
+$img2: url(img/homefinal.jpg);
+$img3: url(img/1.jpg);
+$img4: url(img/importa.jpg);
+$img5: url(img/towers.jpg);
+$img6: url(img/analisis02.jpg);
+$img7: url(img/gestion01.jpg);
+$img8: url(img/ejecucion01.jpg);
+$img9: url(img/pexels-yan-krukau-7691704.jpg);
+$img10: url(img/5.jpg);
+$img11: url(img/pexels-yan-krukau-7698799.jpg);
+$img12: url(img/acompañamiento\ \(2\).jpg);
+$img13: url(img/pexels-yan-krukau-7698807.jpg);
+$img14: url(img/6.jpg);
+$img15: url(img/financiamiento9.jpg);
+$img16: url(img/fondos-comun-de-inversion.jpg);
+$img17: url(img/fondos-internacionales.jpg);
+$img18: url(img/fondos-comunes-de-inversion.jpg);
+$img19: url(img/2.jpg);
+$img20: url(img/3.jpg);
+$img21: url(img/4.jpg);
+$img22: url(img/11.jpg);
+$img23: url(img/analisis7.jpg);
+$img24: url(img/analisisyestadisticas.jpg);
+$img25: url(img/12.jpg);
+$img26: url(img/13.jpg);
+$img27: url(img/14.jpg);
+$img28: url(img/comercio006.jpg);
+$img29: url(img/comercio003.jpg);
+$img30: url(img/comercio009.jpg);
+// $img31: url(img/analisis02.jpg);
+$img32: url(img/gestion01.jpg);
+$img33: url(img/ejecucion01.jpg);
+$img34: url(img/analisis5.jpg);
+$img35: url(img/analisis6.jpg);
+$img36: url(img/analisis8.jpg);
+$img37: url(img/analisis01.jpg);
+$img38: url(img/blur-1853262_1280.jpg);
+$img39: url(img/stock-g1878239a3_1280.jpg);
+// banners
+$img40: url(img/analisis4.jpg);
+$img41: url(img/analisis2.jpg);
+$img42: url(img/analisis8.jpg);
+$img43: url(img/contact.jpg);
+$img44: url(img/1.jpg);
+
+$img45: url(img/patternpad.svg);
+
+
+$img46: url(img/inversiones-inteligentes.jpg);
+$img47: url(img/estrategias-de-cobertura.jpg);
+$img48: url(img/consultoria1.jpg);
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $font1, fantasy;
-    // font-family: $font2;
     font-family: $font3;
-    
 }
 
 body{
@@ -168,34 +222,34 @@ body{
 // comercio exterior banner inicia
 
 .f-local{
-    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/analisis4.jpg);
+    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), $img40;
 }
 
 // comercio exterior banner fin
 // comercio exterior banner inicia
 
 .f-comercio{
-    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/analisis2.jpg);
+    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), $img41;
 }
 
 // comercio exterior banner fin
 // finanzas coorporativas banner inicia
 
 .f-corporativas{
-    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/analisis8.jpg);
+    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), $img42;
 }
 
 // finanzas coorporativas banner fin
 // contacto banner inicia
 
 .f-contacto{
-    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/contact.jpg);
+    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), $img43;
 }
 // contacto banner fin
 // etapas banner inicia
 
 .f-etapas{
-    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), url(img/1.jpg);
+    background-image: linear-gradient(to left top, rgba(113, 113, 113, 0.8), rgba(133, 133, 133, 0.8), rgba(153, 153, 153, 0.8), rgba(174, 174, 174, 0.8), rgba(195, 195, 195, 0.8), rgba(207, 207, 207, 0.8), rgba(219, 219, 219, 0.8), rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8), rgba(243, 243, 243, 0.8), rgba(250, 250, 250, 0.8), rgba(255, 255, 255, 0.8)), $img3;
 }
 // etapas banner fin
 
@@ -226,7 +280,7 @@ main{
     width: 100%;
     padding: 20px;
     background-color: $color0;
-    background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), url(img/patternpad.svg);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.8)), $img45;
     background-position: center;
     color: $color1;
 
@@ -236,7 +290,7 @@ main{
         .desc-img{
             height: 500px;
             width: 40%;
-            background-image: url(img/pyme\ finance.jpg);
+            background-image: $img1;
             background-size: cover;
             background-position: center;
             box-shadow: 10px 10px 0px $color3, 10px 10px 10px $color1;
@@ -297,7 +351,7 @@ main{
     } 
 
     .desc2 .desc-img{
-        background-image: url(img/homefinal.jpg);
+        background-image: $img2;
     }
 }
 
@@ -417,7 +471,7 @@ h2{
 
     .art-vert-img{
         height: 350px;
-        background-image: url(img/analisis02.jpg);
+        background-image: $img6;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -637,31 +691,31 @@ footer{
 // finanzas corporativas
 
 .finan-img1{
-    background-image: url(img/inversiones\ inteligentes.jpg) !important;
+    background-image: $img46 !important;
 }
 
 .finan-img2{
-    background-image: url(img/estrategias\ de\ cobertura.jpg) !important;
+    background-image: $img47 !important;
 }
 
 .finan-img3{
-    background-image: url(img/consultoria1.jpg) !important;
+    background-image: $img48 !important;
 }
 
 
 //feature financiamiento local
 
 .feature-finance article:nth-child(1) .art-vert-img{
-    background-image: url(img/financiamiento9.jpg);
+    background-image: $img15;
 }
 .feature-finance article:nth-child(2) .art-vert-img{
-    background-image: url(img/fondos\ comun\ de\ inversion.jpg) !important;
+    background-image: $img16 !important;
 }
 .feature-finance article:nth-child(3) .art-vert-img{
-    background-image: url(img/fondos-internacionales.jpg) !important;
+    background-image: $img17 !important;
 }
 .feature-finance article:nth-child(4) .art-vert-img{
-    background-image: url(img/fondos\ comunes\ de\ inversion.jpg);
+    background-image: $img18;
 }
 // etapas inicia
 
