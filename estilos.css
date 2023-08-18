@@ -222,7 +222,7 @@ main .desc .desc-art a:hover::after {
   top: 0;
   display: inline-flex;
   z-index: 3;
-  background-color: #030346;
+  background-color: #fff;
 }
 main .desc .desc-art a span {
   position: absolute;
@@ -330,7 +330,7 @@ h2 {
 }
 
 .slogan h2 {
-  text-align: left;
+  text-align: justify;
   color: #fff;
 }
 
